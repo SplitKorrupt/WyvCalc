@@ -25,3 +25,10 @@ Welcome to the Wyvern Maturation Calculator. This tool helps you calculate the f
     </div>
     <button type="submit">Calculate</button>
 </form>
+@if (ViewBag.RemainingFoodNeeded != null)
+{
+    <h2>Results</h2>
+    <p>The wyvern needs @ViewBag.RemainingFoodNeeded more food to reach 100% maturity.</p>
+    <p>This is equivalent to @ViewBag.RemainingMilkNeeded units of milk.</p>
+    <p>It will take approximately @ViewBag.RemainingTime hours to reach 100% maturity.</p>
+}
